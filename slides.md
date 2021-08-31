@@ -10,6 +10,9 @@ title: Concepteur Développeur d'Application
 # Concepteur Développeur d'Application
 ## Florian BOUILLON - 2021
 
+<!--
+TODO: trouver une bonne intro
+-->
 
 ---
 layout: content-1
@@ -44,6 +47,10 @@ Parcours professionnel
 Aptatio  
 Le projet: AptaHome
 
+<!--
+commencer par l'intro
+-->
+
 ---
 layout: section-2
 ---
@@ -51,12 +58,12 @@ layout: section-2
 # Parcours professionnel
 
 <!--
-- Études SEN
 - Passionnée d'informatique depuis longtemps
 - vacances d'été j'ai adoré
+- Études SEN => SN
 - rejoinds l'IMIE -> Campus Academy
 - Aptatio en stage puis alternance
-- alterance projets c++ Arduino, logiciel Web full stack
+- au cours des dernières - projets Typescript/languages web, c++ Arduino, app mobile Kotlin
 -->
 
 ---
@@ -69,33 +76,45 @@ layout: section-2
 <img src="https://www.aptatio.com/wp-content/uploads/2019/06/LOGO_APTATIO_I.png" style="width: 80%; " />
 </div>
 
+<div class="flex justify-center flex-grow-0">
+<img src="https://www.aptatio.com/wp-content/uploads/2015/06/00-connecth-inh-.jpg" style="width: 50%; " />
+</div>
+
 <!--
 - Aptatio
-- Expert dans le domaine du design produit, prototypage, développement logiciel
+- entreprise Experte dans le domaine du design produit, prototypage, développement logiciel
 - 8 ans d'exp
+- domaines electronique et logiciel
 - accomapgnement client, prototypage => industrialisation passant logiciel/electronique.
 -->
 
 ---
-layout: section-2
+layout: image
+image: '../logo-aptahome.png'
 ---
 
 # Le Projet
 
 <div v-after class="text-4xl">
 
+L'aptaHome
+
+</div>
+
+<div v-click class="py-8 text-4xl">
+
 Contexte
 
 </div>
-  
-<div v-click class="py-8 text-4xl">
+
+<div v-click class="text-4xl">
 
 Objectifs et Enjeux
 
 </div>
 
 
-<div v-click class="text-4xl">
+<div v-click class="py-8 text-4xl">
 
 Contraintes
 
@@ -107,8 +126,8 @@ Projet AptaHome
 Contexte
 
 - débuté début 2020
-- automatisation
-- automatisation des documents
+- automatisation des documents pro
+- reduction temps création documents
 
 Objectifs
 
@@ -120,18 +139,18 @@ Contraintes
 - fonctionnel
 	- Simplicité d'utilisation
 	- Liaison avec Dolibarr
+- Qualité
+	- facilité d'utilisation
+	- // cotés soft
+	- maintenable
 - Technique
 	- Language simple
 	- Conteneur
-- Qualité
-	- maintenable
-	- facilité d'utilisation
 
-Délais
-
-- Premier proto 2018
-- début 2021
-- fin mi-2021
+- Délais
+	- Premier proto 2018
+	- début 2021
+	- fin mi-2021
 -->
 
 ---
@@ -173,6 +192,8 @@ layout: section-2
 	- todo automatique
     - in prgs taches active
     - done faite
+    
+- Code stocké sur Github
 -->
 
 ---
@@ -191,8 +212,6 @@ Spécification&nbsp;Fonctionnelle
 
 <!--
 Fonctionnelle
-
-- Page 14 du doc un cas d'utilisation UML
 
 - Authentification: Sécurité
 - Édition de documents: Édition simple de documents
@@ -272,8 +291,6 @@ Conception Graphique
 - Maquettage sur Figma
 
 - Prototypage Graphique
-
-- Popup customisable
 -->
 
 ---
@@ -282,6 +299,11 @@ layout: section-1
 
 # 3. Réalisation
 
+______
+
+Développement du Front  
+Développement du Back  
+Tests Unitaire et Déploiement
 ---
 layout: section-2
 name: Développement du Front
@@ -313,6 +335,10 @@ interface States extends Filters {
 }
 ```
 
+<!--
+TODO: Before this swho file structure
+-->
+
 ---
 layout: section-2
 name: Développement du Front 2
@@ -342,6 +368,38 @@ export default class OffersRoute extends React.Component<Props, States> {
 }
 ```
 
+---
+layout: section-2
+name: Développement du Back - Controllers
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Controller
+</div>
+
+```ts {all|1-2,12|3|4-10|all}
+export const getServerSideProps: GetServerSideProps<Props> = router
+	.from<Prop>('serverSideProps')
+	.get(async (ctx) => {
+		const offers = await Offer.findAll()
+		...
+		return {
+			props: {
+				offers: offers
+			}
+		}
+	})
+.build()
+
+```
+
+<!--
+Moins être un gogole loool
+-->
 
 ---
 layout: section-2
@@ -377,6 +435,12 @@ export default Bon
 ```
 
 <!--
+- interface déclaration de colunnes de la table
+	- noter que Offer est une jointure avec la table des offres
+- class création du lien entre Sequelize et notre déclaration
+- initialiser la table in db
+- jointures faites ici
+
 ```sql
 CREATE TABLE `bon` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -406,6 +470,8 @@ Développement du Back
 Modèles de donnée
 </div>
 
+<v-click-hide>
+
 ```sql
 CREATE TABLE `bon` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -414,8 +480,22 @@ CREATE TABLE `bon` (
   PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `users` ADD FOREIGN KEY (`offer_id`) REFERENCES `offer` (`id`);
+ALTER TABLE `bon` ADD FOREIGN KEY (`offer_id`) REFERENCES `offer` (`id`);
 ```
+              
+</v-click-hide>
+
+<v-click>
+  
+```ts
+await Bon.findById(21)
+```
+
+```sql
+SELECT * FROM bon INNER JOIN offer.id = bon.offer_id WHERE bon.id = 21;
+```
+
+</v-click>
 
 <!--
 ```sql
@@ -434,12 +514,12 @@ Développement du Back
 </div>
 
 <div class="py-4 text-3xl">
-API
+API - Global
 </div>
 
 <v-click>
 
-```ts {all|1,17|2,5|3,15|all}
+```ts {all|1,16|2,5|3,14|6-14|1-4}
 export default router.from('api')
 	.get(async (req, res) => {
 		res.status(200).json(await Bon.findAll())
@@ -459,6 +539,49 @@ export default router.from('api')
 ```
 
 </v-click>
+
+<!--
+- Maquettage sur Figma
+
+- Prototypage Graphique
+
+- Popup customisable
+-->
+
+---
+layout: image
+image: ../api-folders.PNG
+name: Développement du Back - API - Middleware
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+API - Middleware
+</div>
+
+```ts {all|3|5-15|all}
+const router = new Router<{token: string}>().use(
+	(req) => {
+		req.token = new Session(req).getSession()?.token
+
+		if (
+			!req.token &&
+			!req.url?.startsWith('/login') &&
+			!req.url?.startsWith('/_')
+		) {
+			return {
+				redirect: {
+					statusCode: 301,
+					destination: `/login?redirect=${req.url}`
+				}
+			}
+		}
+	}
+)
+```
 
 <!--
 - Maquettage sur Figma
