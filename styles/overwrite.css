@@ -1,3 +1,23 @@
 .slidev-layout.image .block {
 	bottom: initial;
 }
+
+.slidev-layout.image.reverse {
+	background-image: url("../backgrounds/image-reverse.svg");
+	background-position: right bottom;
+}
+
+.slidev-layout.image.reverse .block {
+	right: initial;
+	left: 60px;
+	padding-left: 0;
+}
+
+.slidev-layout.image.reverse .image-contaier {
+	margin-left: 50%;
+}
+
+.slidev-layout.image .image-contaier {
+	padding: 8px;
+	background: white;
+}

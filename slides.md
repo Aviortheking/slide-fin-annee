@@ -11,22 +11,47 @@ title: Concepteur Développeur d'Application
 ## Florian BOUILLON - 2021
 
 <!--
-TODO: trouver une bonne intro
+Soutenance de fin d'étude
+ne pas dire campus academy au début
+
+
+TODO:
+ne pas dire campus academy au début
+
+
+parcours pro révélation au lieu de tendre enfance
+
+moins bouger les mains
+
+demande de l'entreprise
+
+meileurs vocabulaire
+
+bouteille d'eau
+
+tester l'UI et l'UX du logiciel
+tester et valider l'usage
+
+donner des exemples pour les partis du code
+
+libreoffice montrer a la fin un exemple
+
+savoir faire evolué avel le logiciel
 -->
 
 ---
-layout: content-1
+layout: content-2
 ---
 
 # Sommaire
 
 - Introduction
 	- Parcours professionnel
-	- L'entreprise
-	- Le Projet
+	- Présentation de l'entreprise Aptatio
+	- Contexte du projet
 - Conception
-	- Méthode de travail
-	- Conception Graphique
+	- Gestion de projet
+	- Interface de l'application
 	- Spécifications
 - Réalisation
 	- Développement du Front
@@ -34,6 +59,9 @@ layout: content-1
 	- Tests Unitaire et Déploiement
 - Conclusion
 
+<!--
+introduire soutenance avec mon parcours, pres aptatio, et le projet
+-->
 
 ---
 layout: section-1
@@ -44,8 +72,8 @@ layout: section-1
 ___
 
 Parcours professionnel  
-Aptatio  
-Le projet: AptaHome
+Présentation de l'entreprise Aptatio  
+Contexte du projet: AptaHome
 
 <!--
 commencer par l'intro
@@ -58,12 +86,12 @@ layout: section-2
 # Parcours professionnel
 
 <!--
-- Passionnée d'informatique depuis longtemps
-- vacances d'été j'ai adoré
-- Études SEN => SN
-- rejoinds l'IMIE -> Campus Academy
+- Passionnée d'informatique depuis enfance
+- vacances sur le fonctionnement d'un ordinateur
+- Études SEN
+- rejoinds Campus Academy 3 ans
 - Aptatio en stage puis alternance
-- au cours des dernières - projets Typescript/languages web, c++ Arduino, app mobile Kotlin
+- tous sa permis projets Typescript/languages web, c++ Arduino, app mobile Kotlin
 -->
 
 ---
@@ -82,39 +110,37 @@ layout: section-2
 
 <!--
 - Aptatio
-- entreprise Experte dans le domaine du design produit, prototypage, développement logiciel
-- 8 ans d'exp
-- domaines electronique et logiciel
-- accomapgnement client, prototypage => industrialisation passant logiciel/electronique.
+- entreprise Experte depuis plus de 8 ans dans le domaine du design produit, prototypage, développement logiciel
+- permet accomapgnement client complet, prototypage => industrialisation passant logiciel/electronique.
+- nouveau locaux
+- dire ce que j'ai fait dans l'entreprise
 -->
 
 ---
-layout: image
+layout: section-1
 image: ../logo-aptahome.png
 ---
 
 # Le Projet
 
-<div v-after class="text-4xl">
-
-L'aptaHome
-
+<div class="flex justify-center flex-grow-0">
+<img src="/logo-aptahome.png" style="width: 40%; " />
 </div>
 
-<div v-click class="py-8 text-4xl">
+<div v-click class="py-1 text-xl">
 
 Contexte
 
 </div>
 
-<div v-click class="text-4xl">
+<div v-click class="text-xl">
 
 Objectifs et Enjeux
 
 </div>
 
 
-<div v-click class="py-8 text-4xl">
+<div v-click class="py-1 text-xl">
 
 Contraintes
 
@@ -122,6 +148,12 @@ Contraintes
 
 <!--
 Projet AptaHome
+the mains goal is to create a software that allow to easily 
+
+Cŕeation d'un logiciel Web permettant de facilement créer modifier de gérer les différents documents administratifs de l'entreprise
+
+*click*
+
 
 Contexte
 POURQUOI
@@ -178,20 +210,69 @@ layout: section-2
 
 # Méthode de travail
 
-<v-click>
-	<div class="flex justify-center flex-grow-0 py-8">
-		<img src="/method.png" />
-	</div>
-</v-click>
+<!-- <div class="flex justify-center flex-grow-0 py-8">
+	<img src="/tests-usage.png" style="width: 50%" />
+</div>
+
+- Méthode Agile
+	- rdv tout les vendredi
+	- résumé des changement éfféctué pendant la semaine
+	- tests des changements et de la solution en global
+-->
+
+---
+layout: section-2
+---
+
+# Gestion du travail
+
+
+<div class="flex justify-center flex-grow-0 py-4">
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FGitHub_logo.png&f=1&nofb=1" style="width: 20%" />
+</div>
+
+<div v-click class="flex justify-center flex-grow-0 py-4">
+	<img src="/method.png" />
+</div>
+
+<div v-after class="flex justify-center flex-grow-0 py-4">
+	<img src="/labels.png" style="width: 50%" />
+</div>
 
 <!--
-- Méthode Agile
-	- rdv hebdomadaire
-    - test des elements du système
 
-*click*
+Code Stocké sur Github
 
-afficher KANBAN
+KANBAN
+
+- Kanban
+	- todo automatique
+    - in prgs taches active
+    - done faite
+    
+- Code stocké sur Github
+-->
+
+---
+layout: section-2
+name: Environments du Logiciel
+---
+
+# Environments du Logiciel
+
+
+<div class="flex justify-center flex-grow-0 py-4">
+	<img src="/monitor.svg" style="width: 20%" />
+</div>
+
+<div v-click class="flex justify-center flex-grow-0 py-4">
+	<img src="https://caprover.com/img/logo.png" style="width: 20%" />
+</div>
+
+
+<!--
+
+KANBAN
 
 - Kanban
 	- todo automatique
@@ -216,6 +297,7 @@ Spécification&nbsp;Fonctionnelle
 </div>
 
 <!--
+Diagramme de cas d'utilisation
 Fonctionnelle
 
 - Authentification: Sécurité
@@ -283,8 +365,8 @@ Exemple de séquences faite pour la connexion
 -->
 
 ---
-layout: image
-image: ../front.PNG
+layout: image-reverse
+image: ../graphique-index.png
 name: Conception Graphique
 ---
 
@@ -295,6 +377,34 @@ Conception Graphique
 <!--
 - Maquettage sur Figma
 
+- Prototypage Graphique
+-->
+
+---
+layout: image-reverse
+image: ../proto-graphique.png
+name: Prototypage Graphique
+---
+
+<div class="text-6xl">
+Prototypage Graphique
+</div>
+
+<!--
+- Prototypage Graphique
+-->
+
+---
+layout: image-reverse
+image: ../assets.png
+name: Assets Graphique
+---
+
+<div class="text-6xl">
+Assets<br />Graphique
+</div>
+
+<!--
 - Prototypage Graphique
 -->
 
@@ -388,7 +498,7 @@ Controller
 
 ```ts {all|1-2,12|3|4-10|all}
 export const getServerSideProps: GetServerSideProps<Props> = router
-	.from<Prop>('serverSideProps')
+	.from<Props>('serverSideProps')
 	.get(async (ctx) => {
 		const offers = await Offer.findAll()
 		...
@@ -595,6 +705,205 @@ const router = new Router<{token: string}>().use(
 
 - Popup customisable
 -->
+
+---
+layout: image-reverse
+image: "tpl-2.png"
+name: Développement du Back - Gestion de Templates
+---
+
+<div class="text-5xl">
+Développement<br />du Back
+</div>
+
+<div class="py-4 text-3xl">
+Gestion de templates
+</div>
+
+<div class="py-4">
+	<img src="/tpl-1.png" style="width: 20%" />
+</div>
+
+<!--
+TODO: show some XML
+
+Structure ODT + d'un template
+-->
+
+---
+layout: content-1
+name: Développement du Back - Gestion de Templates - Compilation de templates
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Compilation de templates
+</div>
+
+```ts {all|2-3|5-6|8-13|15-17|all}
+public async compileText(content: string): Promise<string> {
+	// Load XML Content
+	const xml = await XML.parseAsync(content)
+
+	// Process Document
+	this.scanTag(xml)
+
+	// Register Handlerbars helpers
+	Handlebars.registerHelper('inc', (item) => item + 1)
+	Handlebars.registerHelper('equal', function equalHelper(a, b, opts: HelperOptions) {
+		return a == b ? opts.fn(this) : opts.inverse(this)
+	})
+	Handlebars.registerHelper('isNotZero', (item) => item !== 0)
+
+	// Run Handlebars in the file
+	const tpl = Handlebars.compile(built)
+	return tpl(this.input)
+}
+```
+
+<!--
+Explication compilation Template
+-->
+
+---
+layout: section-1
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Tests unitaires
+---
+
+# Tests unitaire
+
+<div class="py-2">
+	<img src="/unit-test-1.png" style="width: 60%" />
+</div>
+
+<div v-click class="mx-32 py-2">
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fjest-logo-png-transparent.png&f=1&nofb=1" style="width: 25%" />
+</div>
+
+<!--
+donner un exemple avec les tests de parsing et de stringify de XML
+-->
+
+---
+layout: content-2
+name: Tests unitaires - Example
+---
+
+# Tests unitaire
+
+```ts {all|3-10|12-19|all}
+const XML = require('../../src/libs/XML').default
+
+test('Parsing a full document should work', async () => {
+	const res = await XML.parseAsync('<test at="p">p1<child>c1</child>p2</test>')
+	expect(res).toEqual({
+		name: 'test',
+		attrs: [{key: 'at', value: 'p'}],
+		childs: ['p1', {name: 'child', childs: ['c1']}, 'p2']
+	})
+})
+
+test('Stringify Should escape expected characters in values', async () => {
+	const res = await XML.stringifyAsync({
+		name: 'test',
+		attrs: [{key: 'test', value: '&"\'<>'}],
+		childs: ['&"\'<>']
+	})
+	expect(res).toMatchSnapshot()
+})
+```
+
+```ts
+exports[`Stringify Should escape expected characters in values 1`] =
+	`"<test test=\\"&amp;&quot;&apos;&lt;&gt;\\">&amp;&quot;&apos;&lt;&gt;</test>"`;
+```
+
+<!--
+donner un exemple avec les tests de parsing et de stringify de XML
+-->
+
+---
+layout: content-2
+name: Déploiement
+---
+
+<div class="text-5xl">
+Déploiement du logiciel
+</div>
+
+```dockerfile {all|1-11|12-24|all}
+FROM node:alpine as BUILD_IMAGE
+
+WORKDIR /app
+
+ADD package.json package-lock.json ./
+
+RUN npm i
+
+ADD . .
+
+RUN npm run build && npm prune --production
+
+FROM node:alpine
+
+WORKDIR /app
+
+COPY --from=BUILD_IMAGE /app/package.json ./package.json
+COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
+COPY --from=BUILD_IMAGE /app/.next ./.next
+COPY --from=BUILD_IMAGE /app/public ./public
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
+```
+
+<!--
+Montrer le Dockerfile
+
+Montrer déplloiement sur Caprover
+-->
+
+---
+layout: image
+image: /deploy-1.png
+name: Déploiement - Caprover
+---
+
+<div class="text-5xl">
+Déploiement du logiciel
+</div>
+
+<div class="flex justify-center flex-grow-0 py-16">
+	<img src="https://caprover.com/img/logo.png" style="width: 40%" />
+</div>
+
+---
+layout: section-1
+---
+
+# Conclusion
 
 ---
 layout: end
