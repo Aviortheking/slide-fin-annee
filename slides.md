@@ -72,12 +72,12 @@ layout: section-2
 
 # L'Entreprise
 
-<div class="flex justify-center flex-grow-0 py-8">
-<img src="https://www.aptatio.com/wp-content/uploads/2019/06/LOGO_APTATIO_I.png" style="width: 80%; " />
+<div class="flex justify-center flex-grow-0">
+<img src="https://www.aptatio.com/wp-content/uploads/2015/06/00-connecth-inh-.jpg" style="width: 70%; " />
 </div>
 
-<div class="flex justify-center flex-grow-0">
-<img src="https://www.aptatio.com/wp-content/uploads/2015/06/00-connecth-inh-.jpg" style="width: 50%; " />
+<div class="flex justify-center flex-grow-0 py-8">
+<img src="https://www.aptatio.com/wp-content/uploads/2019/06/LOGO_APTATIO_I.png" style="width: 50%; " />
 </div>
 
 <!--
@@ -90,7 +90,7 @@ layout: section-2
 
 ---
 layout: image
-image: '../logo-aptahome.png'
+image: ../logo-aptahome.png
 ---
 
 # Le Projet
@@ -124,7 +124,7 @@ Contraintes
 Projet AptaHome
 
 Contexte
-
+POURQUOI
 - débuté début 2020
 - automatisation des documents pro
 - reduction temps création documents
@@ -133,9 +133,12 @@ Objectifs
 
 - centralisation documents entreprise
 - template de document
+integrer au workflow
+faire evoluier et ouvrir
 
 
 Contraintes
+difficulte'resumesr
 - fonctionnel
 	- Simplicité d'utilisation
 	- Liaison avec Dolibarr
@@ -187,6 +190,8 @@ layout: section-2
     - test des elements du système
 
 *click*
+
+afficher KANBAN
 
 - Kanban
 	- todo automatique
