@@ -4,23 +4,54 @@ layout: cover
 highlighter: prism
 lineNumbers: false
 company: Campus Academy
+title: Concepteur Développeur d'Application
 ---
 
 # Concepteur Développeur d'Application
+## Florian BOUILLON - 2021
+
+<!--
+Soutenance de fin d'étude
+ne pas dire campus academy au début
+
+
+TODO:
+ne pas dire campus academy au début
+
+
+parcours pro révélation au lieu de tendre enfance
+
+moins bouger les mains
+
+demande de l'entreprise
+
+meileurs vocabulaire
+
+bouteille d'eau
+
+tester l'UI et l'UX du logiciel
+tester et valider l'usage
+
+donner des exemples pour les partis du code
+
+libreoffice montrer a la fin un exemple
+
+savoir faire evolué avel le logiciel
+-->
 
 ---
-layout: content-1
+layout: content-2
 ---
 
 # Sommaire
 
 - Introduction
 	- Parcours professionnel
-	- L'entreprise
-	- Le Projet
+	- Présentation de l'entreprise Aptatio
+	- Contexte du projet
 - Conception
-	- Méthode de travail
-	- Conception Graphique
+	- Gestion de projet
+	- Interface de l'application
 	- Spécifications
 - Réalisation
 	- Développement du Front
@@ -28,6 +59,9 @@ layout: content-1
 	- Tests Unitaire et Déploiement
 - Conclusion
 
+<!--
+introduire soutenance avec mon parcours, pres aptatio, et le projet
+-->
 
 ---
 layout: section-1
@@ -35,30 +69,43 @@ layout: section-1
 
 # 1. Introduction
 
+___
+
+Parcours professionnel  
+Présentation de l'entreprise Aptatio  
+Contexte du projet: AptaHome
+
+<!--
+commencer par l'intro
+-->
+
 ---
-layout: section-2
+layout: image-fullscreen-2
 ---
+
+<div class="py-16">
 
 # Parcours professionnel
 
+</div>
 <!--
-Avant d’arriver dans mon alternance  est  à  Campus Academy, j’ai effectué  des 
-études de Système électronique et numérique. 
-J’ai toujours été passionnée par l’informatique depuis ma plus tendre enfance le 
-fait de toujours avoir à découvrir des nouvelles technologies et la vitesse d’avancement 
-de l’informatique on en fait un domaine que j’ai apprécié. 
-Après avoir tester pendant des vacances d’été j’ai souhaité rejoindre l’IMIE qui est 
-devenu Campus Academy afin de me professionnaliser dans le domaine du 
-développement logiciel. 
-J’ai rejoint l’entreprise Aptatio en alternance car je les connaissais déjà par des 
-stages précédent le centre de formation afin de pouvoir beaucoup plus évoluer par moi-
-même. 
-Au cours de mes 2 ans en alternance, j’ai pu participer a beaucoup de projets chez 
-Aptatio, en passant par le développement en C++ de modules Arduino au logiciels Web 
-complet, comme l’AptaHome que je vais présenter dans la suite de ce document. 
-Après  mon  alternance,  et  par  déception  de  mes  dernières  années  au  centre  de 
-formation j’ai décidé avec mes supérieurs de rejoindre à temps plein l’entreprise Aptatio.
+- Passionnée d'informatique depuis enfance
+- vacances sur le fonctionnement d'un ordinateur
+- Études SEN
+- rejoinds Campus Academy 3 ans
+- Aptatio en stage puis alternance
+- tous sa permis projets Typescript/languages web, c++ Arduino, app mobile Kotlin
 -->
+
+---
+layout: image-fullscreen-1
+---
+
+<div class="py-16">
+
+# L'entreprise
+
+</div>
 
 ---
 layout: section-2
@@ -66,82 +113,92 @@ layout: section-2
 
 # L'Entreprise
 
+<div class="flex justify-center flex-grow-0">
+<img src="https://www.aptatio.com/wp-content/uploads/2015/06/00-connecth-inh-.jpg" style="width: 70%; " />
+</div>
+
 <div class="flex justify-center flex-grow-0 py-8">
-<img src="https://www.aptatio.com/wp-content/uploads/2019/06/LOGO_APTATIO_I.png" style="width: 80%; " />
+<img src="https://www.aptatio.com/wp-content/uploads/2019/06/LOGO_APTATIO_I.png" style="width: 50%; " />
 </div>
 
 <!--
-La Société Aptatio est un expert dans les domaines du Design produit, Prototypage 
-et Développement Logiciel, avec plus de 8 ans d’existence, elle accompagne ses clients 
-dans  la  création  du  design d’objets connectés, du prototypage fonctionnel jusqu’à son 
-industrialisation en passant par son logiciel et électronique. 
- 
-Elle  est  aussi  centre  de  formation  sur  toute  la  chaine  numérique  3D,  elle  forme  des   
-professionnels   à   la   modélisation   3D   jusqu’à   la   fabrication   objet   par impression 
-3D. 
-Elle  a  créé  plus  d’un  millier  de  différents  objets,  logiciels  et  designs  pour  ses 
-différents clients qui inclus L’Oréal ou encore Orange.
+- Aptatio
+- entreprise Experte depuis plus de 8 ans dans le domaine du design produit, prototypage, développement logiciel
+- permet accomapgnement client complet, prototypage => industrialisation passant logiciel/electronique.
+- nouveau locaux
+- dire ce que j'ai fait dans l'entreprise
 -->
 
 ---
-layout: section-2
+layout: section-1
+image: ../logo-aptahome.png
 ---
 
 # Le Projet
 
-<div v-after class="text-4xl">
+<div class="flex justify-center flex-grow-0">
+<img src="/logo-aptahome.png" style="width: 40%; " />
+</div>
+
+<div v-click class="py-1 text-xl">
 
 Contexte
 
 </div>
-  
-<div v-click class="py-8 text-4xl">
+
+<div v-click class="text-xl">
 
 Objectifs et Enjeux
 
 </div>
 
 
-<div v-click class="text-4xl">
+<div v-click class="py-1 text-xl">
 
 Contraintes
 
 </div>
 
 <!--
-Contexte
+Projet AptaHome
+the mains goal is to create a software that allow to easily 
 
+Cŕeation d'un logiciel Web permettant de facilement créer modifier de gérer les différents documents administratifs de l'entreprise
+
+*click*
+
+
+Contexte
+POURQUOI
 - débuté début 2020
-- automatisation
-- automatisation des documents
+- automatisation des documents pro
+- reduction temps création documents
 
 Objectifs
 
 - centralisation documents entreprise
 - template de document
+integrer au workflow
+faire evoluier et ouvrir
 
 
-Contraintes fonctionnel
+Contraintes
+difficulte'resumesr
+- fonctionnel
+	- Simplicité d'utilisation
+	- Liaison avec Dolibarr
+- Qualité
+	- facilité d'utilisation
+	- // cotés soft
+	- maintenable
+- Technique
+	- Language simple
+	- Conteneur
 
-- Simplicité d'utilisation
-- Liaison avec Dolibarr
-
-Contraintes Technique
-
-- Language simple
-- Conteneur
-
-Contraintes de qualité
-
-- primordial
-- maintenable
-- facilité d'utilisation
-
-Délais
-
-- Premier proto 2018
-- début 2021
-- fin mi-2021
+- Délais
+	- Premier proto 2018
+	- début 2021
+	- fin mi-2021
 -->
 
 ---
@@ -150,29 +207,93 @@ layout: section-1
 
 # 2. Conception
 
+______
+
+Méthode de travail  
+Spécifications Fonctionnel et Technique  
+Conception Graphique
+
+<!--
+- intro conception AptaHome
+-->
+
 ---
 layout: section-2
 ---
 
 # Méthode de travail
 
-<v-click>
-	<div class="flex justify-center flex-grow-0 py-8">
-		<img src="/method.png" />
-	</div>
-</v-click>
+<div class="flex justify-center flex-grow-0 py-8">
+	<img src="https://i.pinimg.com/736x/ce/50/13/ce50136d82119dbab571192a828556cd.jpg" style="width: 50%" />
+</div>
 
 <!--
 - Méthode Agile
-	- rdv hebdomadaire
-    - test des elements du système
+	- rdv tout les vendredi
+	- résumé des changement éfféctué pendant la semaine
+	- tests des changements et de la solution en global
+-->
 
-*click*
+---
+layout: section-2
+---
+
+# Gestion du travail
+
+
+<div class="flex justify-center flex-grow-0 py-4">
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FGitHub_logo.png&f=1&nofb=1" style="width: 20%" />
+</div>
+
+<div v-click class="flex justify-center flex-grow-0 py-4">
+	<img src="/method.png" />
+</div>
+
+<div v-after class="flex justify-center flex-grow-0 py-4">
+	<img src="/labels.png" style="width: 50%" />
+</div>
+
+<!--
+
+Code Stocké sur Github
+
+KANBAN
 
 - Kanban
 	- todo automatique
     - in prgs taches active
     - done faite
+    
+- Code stocké sur Github
+-->
+
+---
+layout: section-2
+name: Environments du Logiciel
+---
+
+# Environments du Logiciel
+
+
+<div class="flex justify-center flex-grow-0 py-4">
+	<img src="/monitor.svg" style="width: 20%" />
+</div>
+
+<div v-click class="flex justify-center flex-grow-0 py-4">
+	<img src="https://caprover.com/img/logo.png" style="width: 20%" />
+</div>
+
+
+<!--
+
+KANBAN
+
+- Kanban
+	- todo automatique
+    - in prgs taches active
+    - done faite
+    
+- Code stocké sur Github
 -->
 
 ---
@@ -190,9 +311,8 @@ Spécification&nbsp;Fonctionnelle
 </div>
 
 <!--
+Diagramme de cas d'utilisation
 Fonctionnelle
-
-- Page 14 du doc un cas d'utilisation UML
 
 - Authentification: Sécurité
 - Édition de documents: Édition simple de documents
@@ -237,7 +357,30 @@ Technologies utilisés
 
 ---
 layout: image
-image: ../front.PNG
+image: ../uml-seq.png
+name: spécification Technique 2
+---
+
+<div class="text-6xl">
+Spécifications
+</div>
+
+<div class="py-4 text-3xl">
+Spécification Technique
+</div>
+
+<!--
+Exemple de séquences faite pour la connexion
+
+- montrer ce que NextJS dirige
+- Montrer ce que Sequelize Dirige
+
+- Montrer la sécurité
+-->
+
+---
+layout: image-reverse
+image: ../graphique-index.png
 name: Conception Graphique
 ---
 
@@ -249,8 +392,34 @@ Conception Graphique
 - Maquettage sur Figma
 
 - Prototypage Graphique
+-->
 
-- Popup customisable
+---
+layout: image-reverse
+image: ../proto-graphique.png
+name: Prototypage Graphique
+---
+
+<div class="text-6xl">
+Prototypage Graphique
+</div>
+
+<!--
+- Prototypage Graphique
+-->
+
+---
+layout: image-reverse
+image: ../assets.png
+name: Assets Graphique
+---
+
+<div class="text-6xl">
+Assets<br />Graphique
+</div>
+
+<!--
+- Prototypage Graphique
 -->
 
 ---
@@ -259,6 +428,11 @@ layout: section-1
 
 # 3. Réalisation
 
+______
+
+Développement du Front  
+Développement du Back  
+Tests Unitaire et Déploiement
 ---
 layout: section-2
 name: Développement du Front
@@ -290,6 +464,10 @@ interface States extends Filters {
 }
 ```
 
+<!--
+TODO: Before this swho file structure
+-->
+
 ---
 layout: section-2
 name: Développement du Front 2
@@ -319,6 +497,38 @@ export default class OffersRoute extends React.Component<Props, States> {
 }
 ```
 
+---
+layout: section-2
+name: Développement du Back - Controllers
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Controller
+</div>
+
+```ts {all|1-2,12|3|4-10|all}
+export const getServerSideProps: GetServerSideProps<Props> = router
+	.from<Props>('serverSideProps')
+	.get(async (ctx) => {
+		const offers = await Offer.findAll()
+		...
+		return {
+			props: {
+				offers: offers
+			}
+		}
+	})
+.build()
+
+```
+
+<!--
+Moins être un gogole loool
+-->
 
 ---
 layout: section-2
@@ -354,6 +564,12 @@ export default Bon
 ```
 
 <!--
+- interface déclaration de colunnes de la table
+	- noter que Offer est une jointure avec la table des offres
+- class création du lien entre Sequelize et notre déclaration
+- initialiser la table in db
+- jointures faites ici
+
 ```sql
 CREATE TABLE `bon` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -383,18 +599,430 @@ Développement du Back
 Modèles de donnée
 </div>
 
+<v-click-hide>
+
 ```sql
 CREATE TABLE `bon` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `customId` varchar(255),
-  `designations` text
+  `designations` text,
+  PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `users` ADD FOREIGN KEY (`offer_id`) REFERENCES `offer` (`id`);
+ALTER TABLE `bon` ADD FOREIGN KEY (`offer_id`) REFERENCES `offer` (`id`);
 ```
+              
+</v-click-hide>
+
+<v-click>
+  
+```ts
+await Bon.findById(21)
+```
+
+```sql
+SELECT * FROM bon INNER JOIN offer.id = bon.offer_id WHERE bon.id = 21;
+```
+
+</v-click>
 
 <!--
 ```sql
 SELECT * FROM bon INNER JOIN offer.id = bon.offer_id
 ```
 -->
+
+---
+layout: image
+image: ../api-folders.PNG
+name: Développement du Back - API 1
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+API - Global
+</div>
+
+<v-click>
+
+```ts {all|1,16|2,5|3,14|6-14|1-4}
+export default router.from('api')
+	.get(async (req, res) => {
+		res.status(200).json(await Bon.findAll())
+	})
+	.post(async (req, res) => {
+		const bon = Bon.build(
+			req.body,
+			{ include: [Offer] }
+		)
+		if (req.query.from) {
+			bon.OfferId = parseInt(req.query.from, 10)
+		}
+		await bon.save()
+		res.status(200).json({ id: bon.id, ok: true })
+	})
+	.build()
+```
+
+</v-click>
+
+<!--
+- Maquettage sur Figma
+
+- Prototypage Graphique
+
+- Popup customisable
+-->
+
+---
+layout: image
+image: ../api-folders.PNG
+name: Développement du Back - API - Middleware
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+API - Middleware
+</div>
+
+```ts {all|3|5-15|all}
+const router = new Router<{token: string}>().use(
+	(req) => {
+		req.token = new Session(req).getSession()?.token
+
+		if (
+			!req.token &&
+			!req.url?.startsWith('/login') &&
+			!req.url?.startsWith('/_')
+		) {
+			return {
+				redirect: {
+					statusCode: 301,
+					destination: `/login?redirect=${req.url}`
+				}
+			}
+		}
+	}
+)
+```
+
+<!--
+- Maquettage sur Figma
+
+- Prototypage Graphique
+
+- Popup customisable
+-->
+
+---
+layout: image-reverse
+image: "tpl-2.png"
+name: Développement du Back - Gestion de Templates
+---
+
+<div class="text-5xl">
+Développement<br />du Back
+</div>
+
+<div class="py-4 text-3xl">
+Gestion de templates
+</div>
+
+<div class="py-4">
+	<img src="/tpl-1.png" style="width: 20%" />
+</div>
+
+<!--
+TODO: show some XML
+
+Structure ODT + d'un template
+-->
+
+---
+layout: content-1
+name: Développement du Back - Gestion de Templates - Compilation de templates
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Compilation de templates
+</div>
+
+```ts {all|2-3|5-6|8-13|15-17|all}
+public async compileText(content: string): Promise<string> {
+	// Load XML Content
+	const xml = await XML.parseAsync(content)
+
+	// Process Document
+	this.scanTag(xml)
+
+	// Register Handlerbars helpers
+	Handlebars.registerHelper('inc', (item) => item + 1)
+	Handlebars.registerHelper('equal', function equalHelper(a, b, opts: HelperOptions) {
+		return a == b ? opts.fn(this) : opts.inverse(this)
+	})
+	Handlebars.registerHelper('isNotZero', (item) => item !== 0)
+
+	// Run Handlebars in the file
+	const tpl = Handlebars.compile(built)
+	return tpl(this.input)
+}
+```
+
+<!--
+Explication compilation Template
+-->
+
+---
+layout: content-2
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<text:p text:style-name="P20">
+  <text:span text:style-name="T32">Objet</text:span>
+  <text:span text:style-name="T33">: </text:span>
+  <text:span text:style-name="T14">{{obj</text:span>
+  <text:span text:style-name="T15">ec</text:span>
+  <text:span text:style-name="T16">t}}</text:span>
+</text:p>
+```
+
+<v-click>
+
+
+```xml
+<text:p text:style-name="P20">
+  <text:span text:style-name="T32">Objet</text:span>
+  <text:span text:style-name="T33">: </text:span>
+  <text:span text:style-name="T16">{{objectt}}</text:span>
+</text:p>
+```
+
+</v-click>
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<table:table table:name="Table1" table:style-name="Table1">
+	<table:table-column table:style-name="Table1.A" />
+	<table:table-column table:style-name="Table1.B" />
+	<table:table-header-rows>
+		<table:table-row table:style-name="Table1.1">
+			<table:table-cell table:style-name="Table1.A1" office:value-type="string">
+				<text:p text:style-name="P17">BL</text:p>
+			</table:table-cell>
+		</table:table-row>
+	</table:table-header-rows>
+	<table:table-row table:style-name="Table1.2">
+		<table:table-cell table:style-name="Table1.A2" office:value-type="string">
+			<text:p text:style-name="P26">[table item=«designations»]{{../id}}{{@index}}</text:p>
+		</table:table-cell>
+	</table:table-row>
+</table:table>
+```
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<table:table table:name="Table1" table:style-name="Table1">
+	<table:table-column table:style-name="Table1.A" />
+	<table:table-column table:style-name="Table1.B" />
+	<table:table-header-rows>
+		<table:table-row table:style-name="Table1.1">
+			<table:table-cell table:style-name="Table1.A1" office:value-type="string">
+				<text:p text:style-name="P17">BL</text:p>
+			</table:table-cell>
+		</table:table-row>
+	</table:table-header-rows>
+	{{#each designations}}
+	<table:table-row table:style-name="Table1.2">
+		<table:table-cell table:style-name="Table1.A2" office:value-type="string">
+			<text:p text:style-name="P26">{{../id}}{{@index}}</text:p>
+		</table:table-cell>
+	</table:table-row>
+	{{/each}}
+</table:table>
+```
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Tests unitaires
+---
+
+# Tests unitaire
+
+<div class="py-2">
+	<img src="/unit-test-1.png" style="width: 60%" />
+</div>
+
+<div v-click class="mx-32 py-2">
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fjest-logo-png-transparent.png&f=1&nofb=1" style="width: 25%" />
+</div>
+
+<!--
+donner un exemple avec les tests de parsing et de stringify de XML
+-->
+
+---
+layout: content-2
+name: Tests unitaires - Example
+---
+
+# Tests unitaire
+
+```ts {all|3-10|12-19|all}
+const XML = require('../../src/libs/XML').default
+
+test('Parsing a full document should work', async () => {
+	const res = await XML.parseAsync('<test at="p">p1<child>c1</child>p2</test>')
+	expect(res).toEqual({
+		name: 'test',
+		attrs: [{key: 'at', value: 'p'}],
+		childs: ['p1', {name: 'child', childs: ['c1']}, 'p2']
+	})
+})
+
+test('Stringify Should escape expected characters in values', async () => {
+	const res = await XML.stringifyAsync({
+		name: 'test',
+		attrs: [{key: 'test', value: '&"\'<>'}],
+		childs: ['&"\'<>']
+	})
+	expect(res).toMatchSnapshot()
+})
+```
+
+```ts
+exports[`Stringify Should escape expected characters in values 1`] =
+	`"<test test=\\"&amp;&quot;&apos;&lt;&gt;\\">&amp;&quot;&apos;&lt;&gt;</test>"`;
+```
+
+<!--
+donner un exemple avec les tests de parsing et de stringify de XML
+-->
+
+---
+layout: content-2
+name: Déploiement
+---
+
+<div class="text-5xl">
+Déploiement du logiciel
+</div>
+
+```dockerfile {all|1-11|12-24|all}
+FROM node:alpine as BUILD_IMAGE
+
+WORKDIR /app
+
+ADD package.json package-lock.json ./
+
+RUN npm i
+
+ADD . .
+
+RUN npm run build && npm prune --production
+
+FROM node:alpine
+
+WORKDIR /app
+
+COPY --from=BUILD_IMAGE /app/package.json ./package.json
+COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
+COPY --from=BUILD_IMAGE /app/.next ./.next
+COPY --from=BUILD_IMAGE /app/public ./public
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
+```
+
+<!--
+Montrer le Dockerfile
+
+Montrer déplloiement sur Caprover
+-->
+
+---
+layout: image
+image: /deploy-1.png
+name: Déploiement - Caprover
+---
+
+<div class="text-5xl">
+Déploiement du logiciel
+</div>
+
+<div class="flex justify-center flex-grow-0 py-16">
+	<img src="https://caprover.com/img/logo.png" style="width: 40%" />
+</div>
+
+---
+layout: section-1
+---
+
+# Conclusion
+
+---
+layout: end
+---
+
+# Merci
+## de votre attention !
+tention !
+tention !

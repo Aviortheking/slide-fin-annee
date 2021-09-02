@@ -16,11 +16,6 @@ ne pas dire campus academy au début
 
 
 TODO:
-ne pas dire campus academy au début
-
-
-parcours pro révélation au lieu de tendre enfance
-
 moins bouger les mains
 
 demande de l'entreprise
@@ -29,12 +24,8 @@ meileurs vocabulaire
 
 bouteille d'eau
 
-tester l'UI et l'UX du logiciel
-tester et valider l'usage
-
 donner des exemples pour les partis du code
 
-libreoffice montrer a la fin un exemple
 
 savoir faire evolué avel le logiciel
 -->
@@ -45,19 +36,38 @@ layout: content-2
 
 # Sommaire
 
+<v-click>
+
 - Introduction
 	- Parcours professionnel
 	- Présentation de l'entreprise Aptatio
 	- Contexte du projet
+
+</v-click>
+
+<v-click>
+
 - Conception
 	- Gestion de projet
 	- Interface de l'application
 	- Spécifications
+
+</v-click>
+
+<v-click>
+
 - Réalisation
 	- Développement du Front
 	- Développement du Back
 	- Tests Unitaire et Déploiement
+
+</v-click>
+
+<v-click>
+
 - Conclusion
+
+</v-click>
 
 <!--
 introduire soutenance avec mon parcours, pres aptatio, et le projet
@@ -80,18 +90,36 @@ commencer par l'intro
 -->
 
 ---
-layout: section-2
+layout: image-fullscreen-2
 ---
+
+<div class="py-16 pl-64">
 
 # Parcours professionnel
 
+</div>
+
 <!--
-- Passionnée d'informatique depuis enfance
+- Passionnée d'informatique depuis longtemps
 - vacances sur le fonctionnement d'un ordinateur
 - Études SEN
 - rejoinds Campus Academy 3 ans
 - Aptatio en stage puis alternance
 - tous sa permis projets Typescript/languages web, c++ Arduino, app mobile Kotlin
+-->
+
+---
+layout: image-fullscreen-1
+---
+
+<div class="py-16">
+
+# L'entreprise
+
+</div>
+
+<!--
+Bureau d'étude
 -->
 
 ---
@@ -114,6 +142,7 @@ layout: section-2
 - permet accomapgnement client complet, prototypage => industrialisation passant logiciel/electronique.
 - nouveau locaux
 - dire ce que j'ai fait dans l'entreprise
+Parler de l'exemple
 -->
 
 ---
@@ -148,20 +177,14 @@ Contraintes
 
 <!--
 Projet AptaHome
-the mains goal is to create a software that allow to easily 
+This is a software that allow to easily manage administrative documents for the company via multiple solutions, like managing documents templates, automaticly sending exported documents to the Samba server and of course manage multiple types of documents.
 
-Cŕeation d'un logiciel Web permettant de facilement créer modifier de gérer les différents documents administratifs de l'entreprise
-
-*click*
-
-
-Contexte
-POURQUOI
+Contexte: POURQUOI
 - débuté début 2020
 - automatisation des documents pro
 - reduction temps création documents
 
-Objectifs
+Objectifs: qu'est-ce que sa fait
 
 - centralisation documents entreprise
 - template de document
@@ -210,10 +233,11 @@ layout: section-2
 
 # Méthode de travail
 
-<!-- <div class="flex justify-center flex-grow-0 py-8">
-	<img src="/tests-usage.png" style="width: 50%" />
+<div class="flex justify-center flex-grow-0 py-8">
+	<img src="https://i.pinimg.com/736x/ce/50/13/ce50136d82119dbab571192a828556cd.jpg" style="width: 50%" />
 </div>
 
+<!--
 - Méthode Agile
 	- rdv tout les vendredi
 	- résumé des changement éfféctué pendant la semaine
@@ -392,6 +416,9 @@ Prototypage Graphique
 
 <!--
 - Prototypage Graphique
+
+Tester l'UI/UX du logiciel
+tester l'usage
 -->
 
 ---
@@ -512,9 +539,6 @@ export const getServerSideProps: GetServerSideProps<Props> = router
 
 ```
 
-<!--
-Moins être un gogole loool
--->
 
 ---
 layout: section-2
@@ -769,7 +793,7 @@ Explication compilation Template
 -->
 
 ---
-layout: section-1
+layout: content-2
 name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
 ---
 
@@ -779,6 +803,132 @@ Développement du Back
 
 <div class="py-4 text-3xl">
 Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<text:p text:style-name="P20">
+  <text:span text:style-name="T32">Objet</text:span>
+  <text:span text:style-name="T33">: </text:span>
+  <text:span text:style-name="T14">{{obj</text:span>
+  <text:span text:style-name="T15">ec</text:span>
+  <text:span text:style-name="T16">t}}</text:span>
+</text:p>
+```
+
+<v-click>
+
+
+```xml
+<text:p text:style-name="P20">
+  <text:span text:style-name="T32">Objet</text:span>
+  <text:span text:style-name="T33">: </text:span>
+  <text:span text:style-name="T16">{{objectt}}</text:span>
+</text:p>
+```
+
+</v-click>
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<table:table table:name="Table1" table:style-name="Table1">
+	<table:table-column table:style-name="Table1.A" />
+	<table:table-column table:style-name="Table1.B" />
+	<table:table-header-rows>
+		<table:table-row table:style-name="Table1.1">
+			<table:table-cell table:style-name="Table1.A1" office:value-type="string">
+				<text:p text:style-name="P17">BL</text:p>
+			</table:table-cell>
+		</table:table-row>
+	</table:table-header-rows>
+	<table:table-row table:style-name="Table1.2">
+		<table:table-cell table:style-name="Table1.A2" office:value-type="string">
+			<text:p text:style-name="P26">[table item=«designations»]{{../id}}{{@index}}</text:p>
+		</table:table-cell>
+	</table:table-row>
+</table:table>
+```
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: content-2
+name: Développement du Back - Gestion de Templates - Problèmes Handlebars et corrections faites
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Problèmes Handlebars et corrections faites
+</div>
+
+```xml
+<table:table table:name="Table1" table:style-name="Table1">
+	<table:table-column table:style-name="Table1.A" />
+	<table:table-column table:style-name="Table1.B" />
+	<table:table-header-rows>
+		<table:table-row table:style-name="Table1.1">
+			<table:table-cell table:style-name="Table1.A1" office:value-type="string">
+				<text:p text:style-name="P17">BL</text:p>
+			</table:table-cell>
+		</table:table-row>
+	</table:table-header-rows>
+	{{#each designations}}
+	<table:table-row table:style-name="Table1.2">
+		<table:table-cell table:style-name="Table1.A2" office:value-type="string">
+			<text:p text:style-name="P26">{{../id}}{{@index}}</text:p>
+		</table:table-cell>
+	</table:table-row>
+	{{/each}}
+</table:table>
+```
+
+<!--
+- Handlebars cant compile [] items so they have to be precompiled to a handlebar compatible ones
+- We have to fix LibreOffice misschiefs or handlebars will not be able to compile it
+-->
+
+---
+layout: section-1
+name: Développement du Back - Gestion de Templates - Exemple de document
+---
+
+<div class="text-5xl">
+Développement du Back
+</div>
+
+<div class="py-4 text-3xl">
+Exemple de document
+</div>
+
+<div class="flex direction-row justify-even">
+	<div class="py-4 px-4">
+		<img src="/bon-template.png"/>
+	</div>
+	<div class="py-4 px-4">
+		<img src="/bon-filled.png"/>
+	</div>
 </div>
 
 <!--
@@ -904,6 +1054,25 @@ layout: section-1
 ---
 
 # Conclusion
+
+<!--
+
+## Projet
+
+- évolué avec ce projet
+- pas mal de difficultés (templates) et j'en ai encore
+- mais le voir aujourdhui utilise par mes collègues et patron
+- sentiment de fièreté
+
+
+## Global
+
+- années dans le domaine du dev
+- forger une passion inconditionnel
+- beaucoup apris au cours des dernières années
+- en companige de Campus Academy
+- de mon entreprise
+-->
 
 ---
 layout: end

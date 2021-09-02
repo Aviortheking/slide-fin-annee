@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "slidev --open",
+    "dev": "slidev --open --remote",
     "build": "slidev build",
     "export": "slidev export"
   },
@@ -10,6 +10,7 @@
     "@slidev/theme-apple-basic": "^0.19.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
+    "playwright-chromium": "^1.14.1",
     "slidev-theme-geist": "^0.6.0",
     "slidev-theme-zhozhoba": "^1.0.0"
   },

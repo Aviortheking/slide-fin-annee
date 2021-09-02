@@ -21,3 +21,15 @@
 	padding: 8px;
 	background: white;
 }
+
+.slidev-layout.section-2.text-center.fullscreen-1 {
+	background-image: url("../backgrounds/section-2.svg"), url("../facade.jpg");
+	background-position: right bottom;
+	color: white;
+}
+
+.slidev-layout.section-2.text-center.fullscreen-2 {
+	background-image: url("../backgrounds/section-2.svg"), url("../campus.png");
+	background-position: right bottom;
+	color: white;
+}
